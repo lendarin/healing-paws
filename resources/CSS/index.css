@@ -1,0 +1,263 @@
+html {
+    box-sizing: border-box;
+    font-family: "Cutive Mono";
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 0 0.4rem;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  left: 0;    
+  width: 100%;
+  background-color: white;
+}
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    padding-left: 1rem;
+    text-align: center;
+    
+}
+header nav ul li {
+    list-style: none;
+    display: inline;
+    padding-right: 1rem;
+
+}
+.small-display {
+    display:none;
+   }
+@media only screen and (max-width: 684px) {
+    .small-display {
+        display:none;
+       }
+    .desktop ul li {
+        display: block;
+    }
+
+}
+@media only screen and (max-width: 960px) and (min-width: 685px) {
+    .small-display {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+   }
+
+   /* MISSION */
+
+.mission-container {
+    height: 20rem;
+    margin-top: 6rem;
+    background-image: url(/Users/admin/Documents/projects/Codecademy/241220_homepage_flexbox_project/resources/images/background.jpg);
+    background-size: contain;
+    align-content: center;
+   }
+#mission {
+    justify-items: center;
+    background-color: white;
+
+}
+#mission p {
+    text-align: center;
+}
+
+@media only screen and (max-width: 522px) {
+    .mission-container {
+        margin-top: 10rem;
+    }
+}
+@media only screen and (max-width: 660px) and (min-width: 523px) {
+    .mission-container {
+        margin-top: 10rem;
+    }
+}
+
+/* PROGRAMS AND SESSIONS */
+
+#programs-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#programs-container h2 {
+    text-align: center;
+    justify-items: center;
+}
+
+#programs {
+    display:inline-flex;
+    gap: 1.5rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1.2;
+  
+}
+
+#cat-cuddling {
+    background-color: rgb(231, 231, 238);
+    justify-content:center;
+    padding: 3rem;
+    margin: 2rem;
+    width: 90%;
+    height: 65%;
+
+}
+
+#rabbit {
+    background-color: rgb(231, 231, 238);
+    justify-content: space-between;
+    padding: 3rem;
+    width: 90%;
+    height: 65%;
+    margin: 2rem;
+
+}
+#superpawer {
+    background-color: rgb(231, 231, 238);
+    justify-content: space-between;
+    padding: 3rem;
+    width: 90%;
+    height: 65%;
+    margin: 2rem;
+
+}
+#rabbit2 {
+    display: none;
+    background-color: rgb(231, 231, 238);
+    justify-content: space-between;
+}
+
+#sessions {
+    justify-items: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+#sessions h2 {
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 890px){
+    #programs {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #cat-cuddling {
+        display: block;
+        padding: 2rem;
+        margin 0 auto;
+        width: 15%;
+        height: 5%;
+        min-width: 10rem;
+    }
+    #superpawer {
+        display: block;
+        padding: 2rem;
+        margin 0 auto;
+        width: 15%;
+        height: 5%;
+        min-width: 10rem;
+    }
+    #rabbit {
+        display: none;
+    }
+    #rabbit2 {
+        display: block;
+        padding: 2rem;
+        margin 0 auto;
+        width: 15%;
+        height: 5%;
+        min-width: 10rem;
+    }
+}
+table {
+    border: 1px solid black;
+    justify-items: center;
+    text-align: center;
+    width: 90%;
+    height: 100%:
+}
+th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; 
+}
+td {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (min-width: 1001px) {
+    table { 
+       
+    }
+}
+
+
+/* MEET THE TEAM */
+#team-container {
+    display: block;
+    text-align: center;
+    margin: 8rem auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.pet-team {
+    background-color: rgb(231, 231, 238);
+    justify-content:center;
+    padding: 3rem;
+    margin: 3rem 2rem 2rem 2rem;
+    width: 50%;
+    height: 35%;
+}
+
+.pet-team h3 {
+    font-size: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(231, 231, 238);
+    align-items: center;
+}
+
+#contact {
+    display: flex;
+    align-items: baseline;
+}
+#contact h3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+#copyright {
+    padding-right: 2rem;
+}
